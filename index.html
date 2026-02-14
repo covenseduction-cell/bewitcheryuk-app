@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bewitchery UK</title>
+    <title>Bewitchery UK — Seller Tools</title>
+    <meta name="description" content="BewitcheryUK Seller Tools: An AI-assisted listing management application for eBay and Etsy sellers. Draft, schedule, and publish marketplace listings and social media posts from one interface." />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -38,7 +39,7 @@
         .container {
             position: relative;
             z-index: 1;
-            max-width: 700px;
+            max-width: 760px;
             margin: 0 auto;
             padding: 60px 30px;
             text-align: center;
@@ -132,6 +133,200 @@
             font-weight: 300;
         }
 
+        /* ─── SECTION HEADINGS ─── */
+        .section-heading {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: #e8d5b5;
+            letter-spacing: 3px;
+            margin-bottom: 24px;
+        }
+
+        /* ─── HOW IT WORKS ─── */
+        .steps {
+            display: grid;
+            gap: 16px;
+            margin: 40px 0;
+            text-align: left;
+            counter-reset: step;
+        }
+
+        .step {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(212, 197, 169, 0.08);
+            border-radius: 12px;
+            padding: 22px 24px;
+            display: flex;
+            gap: 18px;
+            align-items: flex-start;
+            transition: border-color 0.3s;
+        }
+
+        .step:hover { border-color: rgba(212, 197, 169, 0.2); }
+
+        .step-number {
+            counter-increment: step;
+            flex-shrink: 0;
+            width: 32px; height: 32px;
+            background: rgba(212, 197, 169, 0.1);
+            border: 1px solid rgba(212, 197, 169, 0.15);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Cinzel', serif;
+            font-size: 0.8rem;
+            color: #d4c5a9;
+            margin-top: 2px;
+        }
+
+        .step-content h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 0.85rem;
+            color: #e8d5b5;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .step-content p {
+            font-size: 0.82rem;
+            color: #7a6f5f;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        /* ─── API TABLE ─── */
+        .api-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            text-align: left;
+            font-size: 0.82rem;
+        }
+
+        .api-table thead {
+            background: rgba(212, 197, 169, 0.08);
+        }
+
+        .api-table th {
+            font-family: 'Cinzel', serif;
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            color: #8a7d6b;
+            padding: 12px 14px;
+            border-bottom: 1px solid rgba(212, 197, 169, 0.1);
+            text-transform: uppercase;
+        }
+
+        .api-table td {
+            padding: 12px 14px;
+            color: #7a6f5f;
+            border-bottom: 1px solid rgba(212, 197, 169, 0.06);
+            line-height: 1.5;
+            font-weight: 300;
+        }
+
+        .api-table code {
+            background: rgba(212, 197, 169, 0.08);
+            padding: 2px 7px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            color: #b0a48e;
+            word-break: break-all;
+        }
+
+        /* ─── COMPLIANCE ─── */
+        .compliance-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 40px 0;
+            text-align: left;
+        }
+
+        .compliance-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(212, 197, 169, 0.08);
+            border-radius: 12px;
+            padding: 24px 20px;
+        }
+
+        .compliance-card h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 0.8rem;
+            color: #e8d5b5;
+            letter-spacing: 2px;
+            margin-bottom: 14px;
+        }
+
+        .compliance-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .compliance-card li {
+            font-size: 0.8rem;
+            color: #7a6f5f;
+            line-height: 1.6;
+            font-weight: 300;
+            padding: 4px 0 4px 18px;
+            position: relative;
+        }
+
+        .compliance-card li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: #3d3528;
+            font-size: 0.6rem;
+            top: 6px;
+        }
+
+        /* ─── ARCHITECTURE ─── */
+        .arch-flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 12px 0;
+        }
+
+        .arch-node {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(212, 197, 169, 0.1);
+            padding: 12px 18px;
+            border-radius: 10px;
+            font-size: 0.82rem;
+            color: #b0a48e;
+            font-weight: 300;
+        }
+
+        .arch-node small {
+            display: block;
+            font-size: 0.7rem;
+            color: #5a5040;
+            margin-top: 2px;
+        }
+
+        .arch-node.highlight {
+            border-color: rgba(212, 197, 169, 0.2);
+            color: #d4c5a9;
+            background: rgba(212, 197, 169, 0.06);
+        }
+
+        .arch-arrow {
+            color: #3d3528;
+            font-size: 16px;
+        }
+
+        .arch-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(212, 197, 169, 0.06);
+            border-radius: 12px;
+            padding: 30px 20px;
+            margin: 30px 0;
+        }
+
+        /* ─── CONTACT / FOOTER ─── */
         .contact-section {
             margin-top: 50px;
             padding: 30px;
@@ -167,58 +362,287 @@
             letter-spacing: 2px;
         }
 
+        .footer-note {
+            margin-top: 8px;
+            font-size: 0.7rem;
+            color: #2a2520;
+            letter-spacing: 1px;
+        }
+
         @media (max-width: 500px) {
             h1 { font-size: 2rem; }
-            .features { grid-template-columns: 1fr; }
+            .features, .compliance-grid { grid-template-columns: 1fr; }
             .container { padding: 40px 20px; }
+            .arch-flow { flex-direction: column; }
+            .arch-arrow { transform: rotate(90deg); }
         }
     </style>
 </head>
 <body>
     <div class="stars"></div>
     <div class="container">
+
+        <!-- ─── HERO ─── -->
         <div class="moon">🌙</div>
         <h1>Bewitchery UK</h1>
-        <p class="tagline">Dark Elegance &bull; Curated Craft</p>
+        <p class="tagline">Seller Tools &bull; Listing Management</p>
 
         <div class="divider"><span>✦ ✦ ✦</span></div>
 
+        <!-- ─── OVERVIEW ─── -->
         <p class="description">
-            Bewitchery UK is a private management tool built to streamline our Etsy shop operations — from crafting and publishing product listings to generating social media content that captures the spirit of our brand.
+            BewitcheryUK Seller Tools is a private, self-hosted listing management application built for a small UK-based seller of vintage and collectible items. It streamlines the process of creating, scheduling, and publishing marketplace listings across eBay and Etsy, with optional cross-posting to Instagram and Facebook.
         </p>
         <p class="description">
-            Designed for internal use, it handles the behind-the-scenes work so we can focus on what matters: creating handcrafted pieces steeped in folklore, mysticism, and dark aesthetic beauty.
+            Instead of filling in marketplace forms manually, the seller describes items in plain language via a web chat or Telegram. The application drafts listings in the seller's established writing voice, and the seller reviews, edits, and explicitly approves every listing before it is published. No listing is ever created without human approval.
         </p>
 
+        <!-- ─── KEY FEATURES ─── -->
         <div class="features">
             <div class="feature">
                 <div class="feature-icon">🕯️</div>
                 <div class="feature-title">Listings</div>
-                <div class="feature-desc">Automate the creation and management of Etsy product listings</div>
+                <div class="feature-desc">Create eBay and Etsy listings through a conversational interface. AI drafts titles and descriptions in the seller's voice — the seller reviews and approves before publication.</div>
             </div>
             <div class="feature">
                 <div class="feature-icon">📸</div>
                 <div class="feature-title">Content</div>
-                <div class="feature-desc">Generate social media posts and reels from listing imagery</div>
+                <div class="feature-desc">Generate social media posts and short video reels from listing photos. Cross-post to Instagram and Facebook to drive traffic to marketplace listings.</div>
             </div>
             <div class="feature">
                 <div class="feature-icon">🔮</div>
                 <div class="feature-title">Intelligence</div>
-                <div class="feature-desc">AI-assisted captions, narration, and product descriptions</div>
+                <div class="feature-desc">AI-assisted captions, descriptions, and product titles using OpenAI. The seller's writing style is learned and reproduced — no generic marketing copy.</div>
             </div>
             <div class="feature">
                 <div class="feature-icon">📦</div>
                 <div class="feature-title">Publishing</div>
-                <div class="feature-desc">Schedule and push content across multiple platforms</div>
+                <div class="feature-desc">Schedule listings and posts for specific dates and times. The application publishes at the scheduled time so the seller can batch-prepare content in advance.</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <div class="feature-title">Telegram</div>
+                <div class="feature-desc">Create listings on the go via a private Telegram bot. Upload photos at fairs or events and start listings immediately from a mobile device.</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <div class="feature-title">Dashboard</div>
+                <div class="feature-desc">Web-based dashboard showing all scheduled, published, and draft listings. Health monitoring for all connected services (eBay, Etsy, Telegram, Meta).</div>
             </div>
         </div>
 
+        <!-- ─── HOW IT WORKS ─── -->
+        <div class="divider"><span>✦ ✦ ✦</span></div>
+        <h2 class="section-heading">How It Works</h2>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Upload Photos</h3>
+                    <p>The seller sends product photos through the web dashboard or Telegram. Photos are stored on the self-hosted server and associated with the listing session.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Describe the Item</h3>
+                    <p>The seller provides a brief natural-language description — condition, size, provenance, any special characteristics. No forms to fill in.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>AI Drafts the Listing</h3>
+                    <p>The application generates a full title and description using OpenAI, written in the seller's established voice. Price and shipping are calculated based on item dimensions and seller preferences.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Review &amp; Approve</h3>
+                    <p>The seller reads the draft and can request revisions. Only when the seller explicitly approves is the listing prepared for publication. Nothing is ever auto-published.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>Publish &amp; Schedule</h3>
+                    <p>The approved listing is published immediately or scheduled for a future date. The marketplace API (eBay or Etsy) is called to create the live listing with photos, description, price, and shipping.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── ETSY API USAGE ─── -->
+        <div class="divider"><span>✦ ✦ ✦</span></div>
+        <h2 class="section-heading">Etsy API Usage</h2>
+        <p class="description" style="margin-bottom: 30px;">
+            The application uses the Etsy Open API v3 for the following operations. All API calls are initiated by the seller through explicit actions — no automated or background calls are made without the seller's knowledge.
+        </p>
+
+        <table class="api-table">
+            <thead>
+                <tr>
+                    <th>Endpoint</th>
+                    <th>Purpose</th>
+                    <th>When Called</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>POST /shops/{id}/listings</code></td>
+                    <td>Create a new draft listing with title, description, price, and taxonomy</td>
+                    <td>When the seller approves a listing</td>
+                </tr>
+                <tr>
+                    <td><code>POST /listings/{id}/images</code></td>
+                    <td>Upload product photos to the listing</td>
+                    <td>After listing creation</td>
+                </tr>
+                <tr>
+                    <td><code>PUT /listings/{id}</code></td>
+                    <td>Update listing state from draft to active, or edit details</td>
+                    <td>When the seller confirms go-live</td>
+                </tr>
+                <tr>
+                    <td><code>GET /shops/{id}/listings</code></td>
+                    <td>Retrieve existing listings for the seller's shop</td>
+                    <td>When viewing the dashboard</td>
+                </tr>
+                <tr>
+                    <td><code>GET /shops/{id}/shipping-profiles</code></td>
+                    <td>Fetch available shipping profiles for new listings</td>
+                    <td>During listing creation</td>
+                </tr>
+                <tr>
+                    <td><code>GET /seller-taxonomy/nodes</code></td>
+                    <td>Retrieve Etsy category taxonomy for categorisation</td>
+                    <td>During listing creation</td>
+                </tr>
+                <tr>
+                    <td><code>DELETE /listings/{id}</code></td>
+                    <td>Remove a listing if the seller cancels before publication</td>
+                    <td>Seller-initiated deletion only</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ─── ARCHITECTURE ─── -->
+        <div class="divider"><span>✦ ✦ ✦</span></div>
+        <h2 class="section-heading">Architecture</h2>
+        <p class="description" style="margin-bottom: 10px;">
+            Self-hosted Node.js server running on the seller's own machine. No cloud database, no third-party storage. All data stays local.
+        </p>
+
+        <div class="arch-box">
+            <div class="arch-flow">
+                <div class="arch-node">Seller<small>Web / Telegram</small></div>
+                <span class="arch-arrow">→</span>
+                <div class="arch-node highlight">Node.js Server<small>Self-hosted</small></div>
+                <span class="arch-arrow">→</span>
+                <div class="arch-node">OpenAI API<small>Text generation</small></div>
+            </div>
+            <br>
+            <div class="arch-flow">
+                <div class="arch-node highlight">Server</div>
+                <span class="arch-arrow">→</span>
+                <div class="arch-node">eBay API<small>Listings</small></div>
+                <span class="arch-arrow" style="visibility:hidden">→</span>
+                <div class="arch-node highlight">Server</div>
+                <span class="arch-arrow">→</span>
+                <div class="arch-node">Etsy API<small>Listings</small></div>
+            </div>
+            <br>
+            <div class="arch-flow">
+                <div class="arch-node highlight">Server</div>
+                <span class="arch-arrow">→</span>
+                <div class="arch-node">Meta Graph API<small>Instagram / Facebook</small></div>
+            </div>
+        </div>
+
+        <!-- ─── PRIVACY & COMPLIANCE ─── -->
+        <div class="divider"><span>✦ ✦ ✦</span></div>
+        <h2 class="section-heading">Privacy &amp; Compliance</h2>
+
+        <div class="compliance-grid">
+            <div class="compliance-card">
+                <h3>Data Handling</h3>
+                <ul>
+                    <li>All data stored locally on the seller's machine</li>
+                    <li>No buyer or customer data is collected or processed</li>
+                    <li>No data shared with third parties beyond marketplace APIs</li>
+                    <li>API tokens stored in local encrypted settings file</li>
+                    <li>No analytics, tracking, or telemetry collected</li>
+                </ul>
+            </div>
+            <div class="compliance-card">
+                <h3>API Compliance</h3>
+                <ul>
+                    <li>Only OAuth 2.0 authenticated endpoints used</li>
+                    <li>All API calls are seller-initiated, never automated scraping</li>
+                    <li>Rate limits respected with built-in throttling</li>
+                    <li>API credentials never exposed in client-side code</li>
+                    <li>Application does not access other sellers' data</li>
+                </ul>
+            </div>
+            <div class="compliance-card">
+                <h3>Etsy Terms</h3>
+                <ul>
+                    <li>Listings created through official API endpoints only</li>
+                    <li>Seller manually reviews and approves every listing</li>
+                    <li>No automated purchasing, bidding, or account actions</li>
+                    <li>No scraping of Etsy marketplace data or other shops</li>
+                    <li>Seller productivity tool, not a marketplace platform</li>
+                </ul>
+            </div>
+            <div class="compliance-card">
+                <h3>Content Policy</h3>
+                <ul>
+                    <li>All items comply with Etsy's Prohibited Items Policy</li>
+                    <li>Listings are for physical, tangible collectible items</li>
+                    <li>No misleading claims — items described honestly</li>
+                    <li>Established, verified seller with positive feedback</li>
+                    <li>AI descriptions reviewed for accuracy before publication</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ─── ABOUT ─── -->
+        <div class="divider"><span>✦ ✦ ✦</span></div>
+        <h2 class="section-heading">About BewitcheryUK</h2>
+        <p class="description">
+            BewitcheryUK is an established UK-based seller specialising in vintage and collectible items. The shop has a long-running eBay presence with positive feedback and an active Instagram following. This tool was built in-house to reduce the manual effort of listing items across multiple platforms while maintaining the shop's distinctive writing voice and personal touch.
+        </p>
+
+        <div class="features" style="grid-template-columns: 1fr 1fr 1fr 1fr; margin-bottom: 0;">
+            <div class="feature" style="padding: 20px 12px;">
+                <div class="feature-icon">🇬🇧</div>
+                <div class="feature-title">UK Based</div>
+            </div>
+            <div class="feature" style="padding: 20px 12px;">
+                <div class="feature-icon">⭐</div>
+                <div class="feature-title">Established</div>
+            </div>
+            <div class="feature" style="padding: 20px 12px;">
+                <div class="feature-icon">📸</div>
+                <div class="feature-title">Active</div>
+            </div>
+            <div class="feature" style="padding: 20px 12px;">
+                <div class="feature-icon">🔨</div>
+                <div class="feature-title">In-House</div>
+            </div>
+        </div>
+
+        <!-- ─── CONTACT ─── -->
         <div class="contact-section">
             <div class="contact-label">GET IN TOUCH</div>
             <a href="mailto:bewitcheryuk@gmail.com" class="contact-email">bewitcheryuk@gmail.com</a>
         </div>
 
-        <div class="footer">© 2026 BEWITCHERY UK</div>
+        <div class="footer">
+            © 2026 BEWITCHERY UK
+            <div class="footer-note">Private application — not a public service</div>
+        </div>
     </div>
 </body>
 </html>
