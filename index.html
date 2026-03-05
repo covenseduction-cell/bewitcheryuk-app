@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bewitchery UK — Seller Tools</title>
-    <meta name="description" content="BewitcheryUK Seller Tools: An AI-assisted listing management application for eBay and Etsy sellers. Draft, schedule, and publish marketplace listings and social media posts from one interface." />
+    <meta name="description" content="BewitcheryUK Seller Tools: a private, self-hosted listing workflow application for eBay and Etsy. Create, schedule, and publish listings and social posts from one interface (no AI)." />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -385,16 +385,16 @@
         <!-- ─── HERO ─── -->
         <div class="moon">🌙</div>
         <h1>Bewitchery UK</h1>
-        <p class="tagline">Seller Tools &bull; Listing Management</p>
+        <p class="tagline">Seller Tools &bull; Listing Workflow</p>
 
         <div class="divider"><span>✦ ✦ ✦</span></div>
 
         <!-- ─── OVERVIEW ─── -->
         <p class="description">
-            BewitcheryUK Seller Tools is a private, self-hosted listing management application built for a small UK-based seller of vintage and collectible items. It streamlines the process of creating, scheduling, and publishing marketplace listings across eBay and Etsy, with optional cross-posting to Instagram and Facebook.
+            BewitcheryUK Seller Tools is a private, self-hosted listing workflow application built for a small UK-based seller of vintage and collectible items. It streamlines the process of preparing, scheduling, and publishing marketplace listings across eBay and Etsy, with optional cross-posting to Instagram and Facebook.
         </p>
         <p class="description">
-            Instead of filling in marketplace forms manually, the seller describes items in plain language via a web chat or Telegram. The application drafts listings in the seller's established writing voice, and the seller reviews, edits, and explicitly approves every listing before it is published. No listing is ever created without human approval.
+            Instead of filling in marketplace forms manually, the seller sends precise item details via a web chat or a private Telegram bot (an agent-style guided workflow). The system organises the information into structured listing fields and templates. The seller reviews, edits, and explicitly approves every listing before it is published.
         </p>
 
         <!-- ─── KEY FEATURES ─── -->
@@ -402,32 +402,32 @@
             <div class="feature">
                 <div class="feature-icon">🕯️</div>
                 <div class="feature-title">Listings</div>
-                <div class="feature-desc">Create eBay and Etsy listings through a conversational interface. AI drafts titles and descriptions in the seller's voice — the seller reviews and approves before publication.</div>
+                <div class="feature-desc">Create eBay and Etsy listings through a guided conversational workflow. The system organises seller-provided details into titles, descriptions, attributes, and required fields.</div>
             </div>
             <div class="feature">
                 <div class="feature-icon">📸</div>
                 <div class="feature-title">Content</div>
-                <div class="feature-desc">Generate social media posts and short video reels from listing photos. Cross-post to Instagram and Facebook to drive traffic to marketplace listings.</div>
+                <div class="feature-desc">Create social post drafts from listing photos and listing details. Cross-post to Instagram and Facebook to drive traffic to marketplace listings.</div>
             </div>
             <div class="feature">
-                <div class="feature-icon">🔮</div>
-                <div class="feature-title">Intelligence</div>
-                <div class="feature-desc">AI-assisted captions, descriptions, and product titles using OpenAI. The seller's writing style is learned and reproduced — no generic marketing copy.</div>
+                <div class="feature-icon">🗂️</div>
+                <div class="feature-title">Templates</div>
+                <div class="feature-desc">Reusable listing templates for common item types (condition notes, shipping notes, sizing blocks). Consistent formatting without rewriting from scratch.</div>
             </div>
             <div class="feature">
                 <div class="feature-icon">📦</div>
                 <div class="feature-title">Publishing</div>
-                <div class="feature-desc">Schedule listings and posts for specific dates and times. The application publishes at the scheduled time so the seller can batch-prepare content in advance.</div>
+                <div class="feature-desc">Schedule listings and posts for specific dates and times. Batch-prepare content in advance, then publish only after explicit seller approval.</div>
             </div>
             <div class="feature">
                 <div class="feature-icon">📱</div>
                 <div class="feature-title">Telegram</div>
-                <div class="feature-desc">Create listings on the go via a private Telegram bot. Upload photos at fairs or events and start listings immediately from a mobile device.</div>
+                <div class="feature-desc">Create drafts on the go via a private Telegram bot. Upload photos at fairs or events, answer guided prompts, and save drafts for later review.</div>
             </div>
             <div class="feature">
-                <div class="feature-icon">📊</div>
-                <div class="feature-title">Dashboard</div>
-                <div class="feature-desc">Web-based dashboard showing all scheduled, published, and draft listings. Health monitoring for all connected services (eBay, Etsy, Telegram, Meta).</div>
+                <div class="feature-icon">🧰</div>
+                <div class="feature-title">Private Efficiency Tools</div>
+                <div class="feature-desc">Integrated helpers for pricing, shipping presets, stock tracking, and scheduling. Built for one seller, with no public user accounts.</div>
             </div>
         </div>
 
@@ -440,35 +440,35 @@
                 <div class="step-number">1</div>
                 <div class="step-content">
                     <h3>Upload Photos</h3>
-                    <p>The seller sends product photos through the web dashboard or Telegram. Photos are stored on the self-hosted server and associated with the listing session.</p>
+                    <p>The seller sends product photos through the web dashboard or Telegram. Photos are stored on the self-hosted server and attached to a draft listing.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step-number">2</div>
                 <div class="step-content">
-                    <h3>Describe the Item</h3>
-                    <p>The seller provides a brief natural-language description — condition, size, provenance, any special characteristics. No forms to fill in.</p>
+                    <h3>Provide Item Details</h3>
+                    <p>The seller enters precise details using guided prompts (condition, size, materials, provenance, SKU, notes). The workflow ensures required fields are captured.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step-number">3</div>
                 <div class="step-content">
-                    <h3>AI Drafts the Listing</h3>
-                    <p>The application generates a full title and description using OpenAI, written in the seller's established voice. Price and shipping are calculated based on item dimensions and seller preferences.</p>
+                    <h3>Format Into a Draft</h3>
+                    <p>The application formats the seller’s input into structured listing sections using templates and rules (title format, description blocks, attributes, and standard shop policies).</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step-number">4</div>
                 <div class="step-content">
                     <h3>Review &amp; Approve</h3>
-                    <p>The seller reads the draft and can request revisions. Only when the seller explicitly approves is the listing prepared for publication. Nothing is ever auto-published.</p>
+                    <p>The seller reviews the draft and edits anything as needed. Only when the seller explicitly approves is the listing prepared for publication. Nothing is auto-published.</p>
                 </div>
             </div>
             <div class="step">
                 <div class="step-number">5</div>
                 <div class="step-content">
                     <h3>Publish &amp; Schedule</h3>
-                    <p>The approved listing is published immediately or scheduled for a future date. The marketplace API (eBay or Etsy) is called to create the live listing with photos, description, price, and shipping.</p>
+                    <p>The approved listing is published immediately or scheduled for a future date. The marketplace API (eBay or Etsy) is called to create the listing with photos, description, price, and shipping.</p>
                 </div>
             </div>
         </div>
@@ -477,7 +477,7 @@
         <div class="divider"><span>✦ ✦ ✦</span></div>
         <h2 class="section-heading">Etsy API Usage</h2>
         <p class="description" style="margin-bottom: 30px;">
-            The application uses the Etsy Open API v3 for the following operations. All API calls are initiated by the seller through explicit actions — no automated or background calls are made without the seller's knowledge.
+            The application uses the Etsy Open API v3 for listing operations. All API calls are initiated by the seller through explicit actions. The tool is private and used by a single seller only.
         </p>
 
         <table class="api-table">
@@ -491,17 +491,17 @@
             <tbody>
                 <tr>
                     <td><code>POST /shops/{id}/listings</code></td>
-                    <td>Create a new draft listing with title, description, price, and taxonomy</td>
-                    <td>When the seller approves a listing</td>
+                    <td>Create a new draft listing with seller-provided title, description, price, and taxonomy</td>
+                    <td>When the seller approves a draft for creation</td>
                 </tr>
                 <tr>
                     <td><code>POST /listings/{id}/images</code></td>
                     <td>Upload product photos to the listing</td>
-                    <td>After listing creation</td>
+                    <td>After draft listing creation</td>
                 </tr>
                 <tr>
                     <td><code>PUT /listings/{id}</code></td>
-                    <td>Update listing state from draft to active, or edit details</td>
+                    <td>Update listing details or state (draft to active)</td>
                     <td>When the seller confirms go-live</td>
                 </tr>
                 <tr>
@@ -512,12 +512,12 @@
                 <tr>
                     <td><code>GET /shops/{id}/shipping-profiles</code></td>
                     <td>Fetch available shipping profiles for new listings</td>
-                    <td>During listing creation</td>
+                    <td>During listing preparation</td>
                 </tr>
                 <tr>
                     <td><code>GET /seller-taxonomy/nodes</code></td>
                     <td>Retrieve Etsy category taxonomy for categorisation</td>
-                    <td>During listing creation</td>
+                    <td>During listing preparation</td>
                 </tr>
                 <tr>
                     <td><code>DELETE /listings/{id}</code></td>
@@ -540,7 +540,7 @@
                 <span class="arch-arrow">→</span>
                 <div class="arch-node highlight">Node.js Server<small>Self-hosted</small></div>
                 <span class="arch-arrow">→</span>
-                <div class="arch-node">OpenAI API<small>Text generation</small></div>
+                <div class="arch-node">Workflow Engine<small>Templates &amp; rules</small></div>
             </div>
             <br>
             <div class="arch-flow">
@@ -602,7 +602,7 @@
                     <li>Listings are for physical, tangible collectible items</li>
                     <li>No misleading claims — items described honestly</li>
                     <li>Established, verified seller with positive feedback</li>
-                    <li>AI descriptions reviewed for accuracy before publication</li>
+                    <li>Seller controls all listing text and final content</li>
                 </ul>
             </div>
         </div>
@@ -611,7 +611,7 @@
         <div class="divider"><span>✦ ✦ ✦</span></div>
         <h2 class="section-heading">About BewitcheryUK</h2>
         <p class="description">
-            BewitcheryUK is an established UK-based seller specialising in vintage and collectible items. The shop has a long-running eBay presence with positive feedback and an active Instagram following. This tool was built in-house to reduce the manual effort of listing items across multiple platforms while maintaining the shop's distinctive writing voice and personal touch.
+            BewitcheryUK is an established UK-based seller specialising in vintage and collectible items. The shop has a long-running eBay presence with positive feedback and an active Instagram following. This tool was built in-house to reduce the manual effort of listing items across multiple platforms while maintaining consistent, accurate listing information.
         </p>
 
         <div class="features" style="grid-template-columns: 1fr 1fr 1fr 1fr; margin-bottom: 0;">
